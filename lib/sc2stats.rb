@@ -14,8 +14,8 @@ class SC2League
 		end
 	end
 
-	LEAGUES = ["grand master", "master", "diamond", "platinum", "gold", "silver", "bronze", "no league"]
-
+	LEAGUES = ["no league", "bronze", "silver", "gold", "platinum", "diamond", "master", "grand master"]
+	
 	def leagues
 		@leagues
 	end
