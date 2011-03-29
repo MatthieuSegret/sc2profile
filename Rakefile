@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "sc2stats"
   gem.homepage = "http://github.com/jmoeller/sc2stats"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{StarCraft II profile statistics scraper}
+  gem.description = %Q{Scrapes name, 1v1 league and 1v1 league points from a Battle.net StarCraft II profile.}
   gem.email = "julian@julianmoeller.dk"
   gem.authors = ["Julian Møller"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
