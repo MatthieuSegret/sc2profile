@@ -27,7 +27,7 @@ end
 
 class SC2Stats
 	def scrape
-		html = Nokogiri::HTML(open("#{@url}/ladder/leagues"))
+		html = Nokogiri::HTML(open("#{@url}/ladder/leagues","User-Agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0) Gecko/20100101 Firefox/4.0"))
 
 		@league = scrape_league(html)
 		@points = scrape_points(html)
@@ -58,7 +58,7 @@ class SC2Stats
 		if td.nil?
 			0
 		else
-			td.text
+			Integer(td.text)
 		end
 	end
 
