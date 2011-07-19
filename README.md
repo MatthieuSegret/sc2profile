@@ -1,20 +1,43 @@
 # sc2stats
 
-Parses a Battle.net StarCraft 2 profile for name, 1v1 league and 1v1 league points.
+Parses a Battle.net StarCraft 2 profile for name, race, portrait, 1v1 league and 1v1 league points.
 
 ## Usage
 
     p = SC2Stats.new("<profile url>")
-    => <Name> (<League>, <Points> pts)
+    => <Name> (<League>, <Race>, <Points> pts)
 
     p.name
     => <Name>
+    
+    
+    p.race
+    => <Race>
+    
+    p.race.to_style
+    => background: url('<Path>race-symbols.png') <ImageX> <ImageY> no-repeat; width: 25px; height: 25px;
+
 
     p.league
-    => <League>
+    => <LeagueName> <LeagueType> Rank <Rank>
+    
+    p.league.to_style # size => :small, :medium, :big
+    => background: url('<Path><LeagueName>.png') <ImageX> <ImageY> no-repeat; width: <ImageSize>; height: <ImageSize>;
+    
+    p.league.to_json
+    => "{'league_name': 'gold', 'league_type': '1v1','rank': '25'}"
+
 
     p.points
     => <Points>
+    
+    
+    p.portrait_style
+    => background: url('<Path><ImageIndex>-90.jpg') <ImageX> <ImageY> no-repeat; width: 90px; height: 90px;
+    
+    p.portrait_style.to_json
+    => "{'image_index': 0, 'image_x': '0px','image_y': '0px'}"
+
 
 A profile that has not yet been placed will return:
 

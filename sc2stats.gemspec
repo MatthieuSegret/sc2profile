@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = %q{sc2stats}
-  s.version = "0.1.1"
+  s.version = "0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Julian Møller"]
-  s.date = %q{2011-03-30}
+  s.authors = ["Matthieu Segret", "Julian Møller"]
+  s.date = %q{2011-07-19}
   s.description = %q{Scrapes name, 1v1 league and 1v1 league points from a Battle.net StarCraft II profile.}
-  s.email = %q{julian@julianmoeller.dk}
+  s.email = %q{matthieu.segret@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
@@ -26,6 +26,9 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/sc2stats.rb",
+    "lib/sc2league.rb",
+    "lib/sc2race.rb",
+    "lib/sc2portrait_style.rb",
     "sc2stats.gemspec"
   ]
   s.homepage = %q{http://github.com/jmoeller/sc2stats}

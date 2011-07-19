@@ -15,12 +15,12 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "sc2stats"
-  gem.homepage = "http://github.com/jmoeller/sc2stats"
+  gem.homepage = "http://github.com/MatthieuSegret/sc2stats"
   gem.license = "MIT"
   gem.summary = %Q{StarCraft II profile statistics scraper}
   gem.description = %Q{Scrapes name, 1v1 league and 1v1 league points from a Battle.net StarCraft II profile.}
-  gem.email = "julian@julianmoeller.dk"
-  gem.authors = ["Julian Møller"]
+  gem.email = "matthieu.segret@gmail.com"
+  gem.authors = ["Matthieu Segret", "Julian Møller"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
