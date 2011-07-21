@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{sc2stats}
+  s.name = %q{sc2profile}
   s.version = "0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -25,13 +25,13 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
-    "lib/sc2stats.rb",
+    "lib/sc2profile.rb",
     "lib/sc2league.rb",
     "lib/sc2race.rb",
     "lib/sc2portrait_style.rb",
-    "sc2stats.gemspec"
+    "sc2profile.gemspec"
   ]
-  s.homepage = %q{http://github.com/jmoeller/sc2stats}
+  s.homepage = %q{http://github.com/MatthieuSegret/sc2profile}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}

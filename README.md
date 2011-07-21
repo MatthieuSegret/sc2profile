@@ -1,10 +1,10 @@
-# sc2stats
+# SC2Profile
 
 Parses a Battle.net StarCraft 2 profile for name, race, portrait, 1v1 league and 1v1 league points.
 
 ## Usage
 
-    p = SC2Stats.new("<profile url>")
+    p = SC2Profile.new("<profile url>")
     => <Name> (<League>, <Race>, <Points> pts)
 
     p.name
@@ -43,7 +43,7 @@ A profile that has not yet been placed will return:
 
     <Name> (No league, 0 pts)
 
-## Contributing to sc2stats
+## Contributing to SC2Profile
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it

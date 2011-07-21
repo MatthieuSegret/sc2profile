@@ -14,8 +14,8 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "sc2stats"
-  gem.homepage = "http://github.com/MatthieuSegret/sc2stats"
+  gem.name = "sc2profile"
+  gem.homepage = "http://github.com/MatthieuSegret/sc2profile"
   gem.license = "MIT"
   gem.summary = %Q{StarCraft II profile statistics scraper}
   gem.description = %Q{Scrapes name, 1v1 league and 1v1 league points from a Battle.net StarCraft II profile.}
@@ -35,7 +35,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "sc2stats #{version}"
+  rdoc.title = "SC2Profile #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

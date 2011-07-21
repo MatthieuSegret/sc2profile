@@ -7,7 +7,7 @@ require 'sc2league'
 require 'sc2portrait_style'
 require 'sc2race'
 
-class SC2Stats
+class SC2Profile
   
   # --------------------------------------------------------------------------
   #
@@ -25,8 +25,8 @@ class SC2Stats
   #
   # --------------------------------------------------------------------------
   
-  def initialize(profileurl, options=[:name, :race, :points, :league, :portrait_style])
-    @url = profileurl
+  def initialize(profile_url, options=[:name, :race, :points, :league, :portrait_style])
+    @url = profile_url
     @options = options
     self.scrape @options
   end
@@ -43,7 +43,7 @@ class SC2Stats
   end
 
   def ==(o)
-    if o.is_a? SC2Stats
+    if o.is_a? SC2Profile
       @url == o.url
     else
       false
